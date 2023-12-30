@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-wrap">
+      <img src="IMG/ow.png" id="owBtn" height="60px">
+      <div class="gallery">
+        <div>
+          <span><img src="IMG/kill.jpeg" alt="Image 1" height="300px"></span>
+          <span><img src="IMG/yo.jpeg" alt="Image 2"></span>
+          <span><img src="IMG/ong.jpeg" alt="Image 3"></span>
+        </div>
+        <div>
+          <span><img src="IMG/kay.jpeg" alt="Image 4"></span>
+          <span><img src="IMG/bre.jpeg" alt="Image 5"></span>
+          <span><img src="IMG/ak.jpeg" alt="Image 6"></span>
+        </div>
+      </div>
+      <img src="IMG/ar.jpg" id="arBtn" height="60px">
+    </div>
+      
+
+    <script>
+
+      let scrollContainer = document.querySelector(".gallery");
+      let owBtn = document.getElementById("owBtn");
+      let arBtn = document.getElementById("arBtn");
+
+      scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+      });
+
+
+    </script>
+  
+
+</body>
+</html>
